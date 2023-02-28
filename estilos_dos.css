@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background-color: #D2B4DE;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+body {
+    min-height: 100%;
+    background-color: #D7CDCD;
+}
+
+.grid-container > * {
+    box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    padding: 2px;
+    text-align:center;
+}
+
+.header {
+    display:flex;
+    align-items: center;
+    background-color:#8b008b;
+    padding: 10px;
+    margin: 10px 15px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+img {
+border: 3px solid #000000;
+margin: auto;
+padding: 5px;
+background-color: #faebd7;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-family: 'Labrada', serif;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin:  10px 15px;
+    padding: 5px;
+    font-weight:normal;
+    font-size: 24px;
+    color:#8b008b;
+    background-color: #C5A7B8;
+}
+
+nav h1 {
+    margin: auto;
+}
+
+.sidebar, .main {
+    font-family: 'Labrada', serif;
+    font-weight: 900;
+    font-size: 20px;
+    color:#9932cc;
+    margin: 2px;
+    padding: 2px;
+}
+ul {
+    margin-bottom: 20px;
+}
+
+i {
+    font-family: 'Labrada', serif;
+    font-size: 20px;
+    align-items: center;
+    color:#6d006d;
+    list-style: none;
+    font-style: normal;
+}
+
+button{
+    color:#9932cc;
+    background: transparent;
+    border: 2px solid #8b008b;
+    border-radius: 6px;
+    font-family: 'Labrada', serif;
+    font-size: 18px;
+    padding: 0 5px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #C5A7B8;
+}
+
+.hide{
+    display: none;
+}
+
+
+.contact li , .personal li{
+    font-family: 'Labrada', serif;
+    font-size: 18px;
+    align-items: center;
+    color:#6d006d;
+    list-style: none;
+}
+
+li, a , p {
+    color:#000000 ;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.PORTFOLIO li {
+    font-family: 'Labrada', serif;
+    color:#7D3C98;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.PORTFOLIO button , .PORTFOLIO a {
+    color:#000000;
+    background-color:#C5A7B8;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.PORTFOLIO {
+    border: 2px #C5A7B8 dashed;
+    border-radius: 5px;
+    width: 400px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+    "head"
+    "navbar"
+    "sidebar"
+    "main"
+    "PORFOLIO";
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-rows: 250px;
+        grid-template-columns: 275px auto;
+        grid-template-areas:
+        "head navbar"
+        "sidebar main"
+        "none PORFOLIO"
+    }
+}
